@@ -5,6 +5,8 @@ public class GPACalculator {
 
         Scanner scanner = new Scanner(System.in);
 
+        while(true){
+        
         double GPAScale = getScale();
         int markCount = getMarkCount();
         int[] markList = getMarks(markCount);
@@ -13,6 +15,7 @@ public class GPACalculator {
 
         System.out.println("Average: " + average + "\n" + "GPA: " + Math.round(GPA * 100) / 100.0);
 
+        }
     }
 
     public static double getScale() {
